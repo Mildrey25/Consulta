@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray--light: #eaeaea;
+  --white: #f4fffd;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Akaya Telivigala", cursive;
+  background-image: url(../images/Fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 22px;
+}
+
+.menu {
+  background-color: transparent;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  z-index: 999; /* para problemas con el menu y el slider*/
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Akaya Telivigala", cursive;
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 26 px;
+  background-color: #0317216c;
+  margin: 0 10px;
+  transition: 0.5s ease all;
+  color: var(--gray--light);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  transform: translateY(18px);
+  background-color: #081f2b6c;
+}
+
+.Titulo {
+  font-size: 20px;
+  color: var(--purple-dark);
+  font-family: "Akaya Telivigala", cursive;
+  font-weight: 700;
+  z-index: 2; /*Para asegurar que nos quede arriba de la raya*/
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.Titulo span {
+  background-color: var(--gray--light);
+  padding: 0 15px;
+  z-index: 99;
+  position: relative; /* el z index se pueda aplicar */
+}
+
+.Titulo::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background: black;
+  position: relative;
+  top: -29px; /*Vamos a posicionar la linea hacia arriba */
+  z-index: 1;
+}
+
+.Subtitulo {
+  color: var(--white);
+}
+
+.Tex1 {
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 10px;
+  margin-top: 20px;
+  font-size: 0.1px;
+  text-align: left;
+}
+
+.Sub {
+  text-align: center;
+}
+
